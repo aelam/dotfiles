@@ -22,7 +22,6 @@ else
     done
 fi
 
-/bin/sh ./powerline_fonts/install.sh
 
 git submodule sync
 git submodule init
@@ -30,6 +29,8 @@ git submodule update
 git submodule foreach git pull origin master
 git submodule foreach git submodule init
 git submodule foreach git submodule update
+
+/bin/sh ./powerline_fonts/install.sh
 
 # setup command-t
 cd _vim/bundle/command-t

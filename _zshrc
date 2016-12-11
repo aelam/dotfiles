@@ -103,16 +103,18 @@ export EDITOR='vim'
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# coreutils
 if  type "brew" > /dev/null; then
+    # coreutils
     if brew list | grep coreutils > /dev/null ; then
         PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
         MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
         alias ls='ls -F --show-control-chars --color=auto'
         eval `gdircolors -b $HOME/.dir_colors`
     fi
-    
-    if which nvm > /dev/null; then 
+  
+    # nvm
+    if [ -f "$(brew --prefix nvm)/nvm.sh" ]
+    then
         export NVM_DIR=~/.nvm
         source $(brew --prefix nvm)/nvm.sh
     fi
@@ -124,11 +126,8 @@ if which rbenv > /dev/null; then
     eval "$(rbenv init -)"; 
 fi
 
-
-PATH=$PATH:/usr/local/share/npm/bin
-
 # python
-export PYENV_ROOT=/usr/local/opt/pyenv
+export PYENV_ROOT=/usr/local/var/pyenv
 if which pyenv > /dev/null; then 
     eval "$(pyenv init -)"; 
     if which pyenv-virtualenv-init > /dev/null; then 
