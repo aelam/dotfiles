@@ -111,19 +111,30 @@ if  type "brew" > /dev/null; then
         alias ls='ls -F --show-control-chars --color=auto'
         eval `gdircolors -b $HOME/.dir_colors`
     fi
+    
+    if which nvm > /dev/null; then 
+        export NVM_DIR=~/.nvm
+        source $(brew --prefix nvm)/nvm.sh
+    fi
 fi
 
 # ruby
 export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which rbenv > /dev/null; then 
+    eval "$(rbenv init -)"; 
+fi
 
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 PATH=$PATH:/usr/local/share/npm/bin
 
 # python
 export PYENV_ROOT=/usr/local/opt/pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv > /dev/null; then 
+    eval "$(pyenv init -)"; 
+    if which pyenv-virtualenv-init > /dev/null; then 
+        eval "$(pyenv virtualenv-init -)"; 
+    fi
+fi
 
 # Android
 export ANDROID_HOME=/usr/local/opt/android-sdk
@@ -140,8 +151,6 @@ export PATH="$PATH:/opt/codereview/arcanist/bin:/opt/codereview/phabricator/bin"
 # git
 export PATH="/usr/local/opt/git/libexec/git-core:$PATH"
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 # SONAR_HOME
 SONAR_RUNNER_HOME=/usr/local/Cellar/sonar-runner/2.5/libexec

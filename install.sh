@@ -6,8 +6,8 @@ function link_file {
     if [ -e "${target}" ] && [ ! -L "${target}" ]; then
         mv $target $target.bak
     fi
-
-    ln -sf ${source} ${target}
+    echo "${source} ${target}"
+    ln -sfT ${source} ${target}
 }
 
 if [ "$1" = "vim" ]; then
@@ -21,6 +21,8 @@ else
         link_file $i
     done
 fi
+
+/bin/sh ./powerline_fonts/install.sh
 
 git submodule sync
 git submodule init
