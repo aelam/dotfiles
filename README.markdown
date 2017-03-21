@@ -29,5 +29,42 @@ It's as simple as running:
 
 From this top-level directory.
 
+
 ## Requirements
-* bash
+* zsh
+
+## Recommendation
+
+### ZSH
+Swicth your shell to `zsh`, then you will get `zgen` and `oh-my-zsh`, zgen helps you to manage themes, auto-completion and install them automatically when you load `zsh`
+    chsh -s /bin/zsh
+
+### Git
+Git config, Very Important in `_gitconfig`
+Change the `user.name` `user.email`  to yours 
+
+
+### Theme
+
+Edit `_zshrc`
+
+```sh
+    # zgen oh-my-zsh themes/arrow  
+    zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train 
+```
+
+### Font Settings
+My current theme `bullet-train` needs powerline-font which are installed when you run `install.sh`
+Open your Terminal preferances and choose a font name which contains `powerline`
+
+### Mac users
+    
+* Install homebrew http://brew.sh
+* brew install coreutils. 
+
+
+    
+
+
+
+
