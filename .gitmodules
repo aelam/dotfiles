@@ -4,25 +4,12 @@
 [submodule "_vim/bundle/surround"]
 	path = _vim/bundle/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "_vim/bundle/git"]
-	path = _vim/bundle/git
-	url = https://github.com/tpope/vim-git.git
-    ignore = untracked
 [submodule "_vim/bundle/command-t"]
 	path = _vim/bundle/command-t
 	url = https://github.com/wincent/command-t.git
 [submodule "_vim/bundle/ack"]
 	path = _vim/bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
-[submodule "_vim/bundle/gundo"]
-	path = _vim/bundle/gundo
-	url = https://github.com/sjl/gundo.vim.git
-[submodule "_vim/bundle/pep8"]
-	path = _vim/bundle/pep8
-	url = https://github.com/vim-scripts/pep8.git
-[submodule "_vim/bundle/pytest"]
-	path = _vim/bundle/pytest
-	url = https://github.com/alfredodeza/pytest.vim.git
 [submodule "_vim/bundle/makegreen"]
 	path = _vim/bundle/makegreen
 	url = https://github.com/reinh/vim-makegreen
@@ -30,34 +17,16 @@
 	path = _vim/bundle/nerdtree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
     ignore = untracked
-#[submodule "_vim/bundle/ropevim"]
-#	path = _vim/bundle/ropevim
-#	url = https://github.com/klen/rope-vim.git
 [submodule "_vim/bundle/acp"]
 	path = _vim/bundle/acp
 	url = https://github.com/vim-scripts/AutoComplPop.git
     ignore = untracked
-[submodule "_vim/bundle/solarized"]
-	path = _vim/bundle/solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "_vim/bundle/markdown"]
-	path = _vim/bundle/markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-#[submodule "_vim/bundle/snipmate"]
-#	path = _vim/bundle/snipmate
-#	url = https://github.com/garbas/vim-snipmate.git
-[submodule "_vim/bundle/vim-addon-mw-utils"]
-	path = _vim/bundle/vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
 [submodule "_vim/bundle/tagbar"]
 	path = _vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
 [submodule "_vim/bundle/supertab"]
 	path = _vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-[submodule "_vim/bundle/Tasklist.vim"]
-	path = _vim/bundle/Tasklist.vim
-	url = https://github.com/vim-scripts/TaskList.vim
 [submodule "_vim/bundle/powerline"]
 	path = _vim/bundle/powerline
 	url = https://github.com/Lokaltog/vim-powerline
