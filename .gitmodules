@@ -33,12 +33,12 @@
 [submodule "_vim/bundle/vim-virtualenv"]
 	path = _vim/bundle/vim-virtualenv
 	url = https://github.com/jmcantrell/vim-virtualenv.git
-[submodule "_zgen"]
-	path = _zgen
-	url = https://github.com/tarjoilija/zgen.git
 [submodule "_vim/bundle/Vundle.vim"]
 	path = _vim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
 [submodule "powerline_fonts"]
 	path = powerline_fonts
 	url = https://github.com/powerline/fonts.git
+[submodule "_zgen"]
+	path = _zgen
+	url = https://github.com/tarjoilija/zgen.git

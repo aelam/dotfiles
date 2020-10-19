@@ -7,7 +7,7 @@ function link_file {
         mv $target $target.bak
     fi
     echo "${source} ${target}"
-    ln -sfT ${source} ${target}
+    ln -sf ${source} ${target}
 }
 
 if [ "$1" = "vim" ]; then

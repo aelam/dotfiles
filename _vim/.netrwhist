@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/jenkins/Library/Developer/Xcode/DerivedData/EMStock-fjjlihkvtgonpadqwppvavhabthe/Build/Products/Release-iphoneos'
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/wanglun/Documents/workspace/ios/BuildUtils'
+let g:netrw_dirhist_5='/private/etc/sudoers.d'
+let g:netrw_dirhist_4='/Users/wanglun/Documents/workspace/ios/HPMobileAgent'
+let g:netrw_dirhist_3='/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk'
+let g:netrw_dirhist_2='/usr/local/etc/openssl'
+let g:netrw_dirhist_1='/Users/wanglun/Documents/workspace/libimobiledevice-builder/.git/modules'
