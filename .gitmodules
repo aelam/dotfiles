@@ -24,9 +24,6 @@
 [submodule "_vim/bundle/tagbar"]
 	path = _vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
-[submodule "_vim/bundle/supertab"]
-	path = _vim/bundle/supertab
-	url = git://github.com/ervandew/supertab.git
 [submodule "_vim/bundle/powerline"]
 	path = _vim/bundle/powerline
 	url = https://github.com/Lokaltog/vim-powerline
