@@ -108,7 +108,7 @@ export EDITOR='vim'
 
 if  type "brew" > /dev/null; then
     # coreutils
-    if brew list | grep coreutils > /dev/null ; then
+    if brew list --formula | grep coreutils > /dev/null ; then
         PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
         MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
         alias ls='ls -F --show-control-chars --color=auto'
@@ -142,22 +142,7 @@ fi
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
 
-# THEOS
-export THEOS=/opt/theos
 
-# phabricator
-export PATH="/usr/local/sbin:$PATH"
-export PATH="$PATH:/opt/codereview/arcanist/bin:/opt/codereview/phabricator/bin"
-
-
-# git
-#export PATH="/usr/local/opt/git/libexec/git-core:$PATH"
-
-
-# SONAR_HOME
-#SONAR_RUNNER_HOME=/usr/local/Cellar/sonar-runner/2.5/libexec
-#
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 export GEM_HOME=~/.gem
@@ -165,4 +150,4 @@ export PATH="$GEM_HOME/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.7.0/bin/:$PATH"
 #export PATH="/Library/Developer/CommandLineTools/usr/bin:$PATH"
 
-export PATH="`python3 -m site --user-base`/bin:$PATH\""
+#export PATH="`python3 -m site --user-base`/bin:$PATH\""
