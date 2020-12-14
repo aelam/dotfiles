@@ -42,7 +42,7 @@ fi
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PATH=.local/bin:$PATH
+#export PATH=.local/bin:$PATH
 #source $HOME/.powerline/powerline/bindings/zsh/powerline.zsh
 
 # Example aliases
@@ -89,7 +89,7 @@ export UPDATE_ZSH_DAYS=13
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$HOME/bin:.local/bin:/usr/local/bin:$PATH
 export EDITOR='vim'
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -147,7 +147,11 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 export GEM_HOME=~/.gem
 export PATH="$GEM_HOME/bin:$PATH"
-export PATH="/usr/local/lib/ruby/gems/2.7.0/bin/:$PATH"
+export PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
 #export PATH="/Library/Developer/CommandLineTools/usr/bin:$PATH"
 
 #export PATH="`python3 -m site --user-base`/bin:$PATH\""
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+ZSH_DISABLE_COMPFIX=true
+export PATH="/usr/local/opt/ruby/bin:$PATH"
